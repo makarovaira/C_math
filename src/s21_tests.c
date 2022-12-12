@@ -90,25 +90,25 @@ START_TEST(sin_test) {
 END_TEST
 
 START_TEST(cos_test) {
-  ck_assert_float_eq(sin(0.0), s21_sin(0.0));
-  ck_assert_float_eq(sin(1.0), s21_sin(1.0));
-  ck_assert_float_eq(sin(-1.0), s21_sin(-1.0));
-  ck_assert_float_eq(sin(-15.4684), s21_sin(-15.4684));
-  ck_assert_float_eq(sin(15.4684), s21_sin(15.4684));
-  ck_assert_float_eq(sin(0.342), s21_sin(0.342));
-  ck_assert_float_eq(sin(-0.98), s21_sin(-0.98));
+  ck_assert_float_eq(cos(0.0), s21_cos(0.0));
+  ck_assert_float_eq(cos(1.0), s21_cos(1.0));
+  ck_assert_float_eq(cos(-1.0), s21_cos(-1.0));
+  ck_assert_float_eq(cos(-15.4684), s21_cos(-15.4684));
+  ck_assert_float_eq(cos(15.4684), s21_cos(15.4684));
+  ck_assert_float_eq(cos(0.342), s21_cos(0.342));
+  ck_assert_float_eq(cos(-0.98), s21_cos(-0.98));
 }
 END_TEST
 
 START_TEST(tan_test) {
-  ck_assert_float_eq(sin(0.0), s21_sin(0.0));
-  ck_assert_float_eq(sin(1.0), s21_sin(1.0));
-  ck_assert_float_eq(sin(-1.0), s21_sin(-1.0));
-  ck_assert_float_eq(sin(-15.4684), s21_sin(-15.4684));
-  ck_assert_float_eq(sin(15.4684), s21_sin(15.4684));
-  ck_assert_float_eq(sin(0.342), s21_sin(0.342));
-  ck_assert_float_eq(sin(-0.98), s21_sin(-0.98));
-  ck_assert_float_eq(sin(155.0), s21_sin(155.0));
+  ck_assert_float_eq(tan(0.0), s21_tan(0.0));
+  ck_assert_float_eq(tan(1.0), s21_tan(1.0));
+  ck_assert_float_eq(tan(-1.0), s21_tan(-1.0));
+  ck_assert_float_eq(tan(-15.4684), s21_tan(-15.4684));
+  ck_assert_float_eq(tan(15.4684), s21_tan(15.4684));
+  ck_assert_float_eq(tan(0.342), s21_tan(0.342));
+  ck_assert_float_eq(tan(-0.98), s21_tan(-0.98));
+  ck_assert_float_eq(tan(155.0), s21_tan(155.0));
 }
 END_TEST
 
@@ -129,7 +129,6 @@ START_TEST(log_test) {
   ck_assert_float_eq(log(15.4684), s21_log(15.4684));
   ck_assert_float_eq(log(2.245), s21_log(2.245));
   ck_assert_float_eq(log(43785.297), s21_log(43785.297));
-  // ck_assert_float_eq(log(-0.98), s21_log(-0.98)); ?
 }
 END_TEST
 
@@ -168,7 +167,7 @@ START_TEST(atan_test) {
   ck_assert_float_eq(atan(4.67), s21_atan(4.67));
   ck_assert_float_eq(atan(2.2343), s21_atan(2.2343));
   ck_assert_float_eq(atan(0.98), s21_atan(0.98));
-  // ck_assert_float_eq(atan(-0.98), s21_atan(-0.98)); ?
+  ck_assert_float_eq(atan(-0.98), s21_atan(-0.98));
   ck_assert_float_eq(atan(43785.297), s21_atan(43785.297));
 }
 END_TEST
